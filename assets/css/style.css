@@ -36,15 +36,26 @@ li a {
    
 }
 
+/* background image fills page right to left */
 #periodic-table {
     height: 400px;
     width: 100%;
+    position: relative;
     background-image: url("../images/periodic-table.jpg");
     background-size: cover;
-    background-position: center;
     padding: 0;
 }
 
+/* tiny Shelley at top of page */
+#avatar {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    height: 150px;
+    width: auto;
+}
+
+/* header to emphasize work portfolio section */
 #portfolio {
     height: 60px;
     width: 100%;
@@ -73,10 +84,33 @@ h2 {
     padding: 20px;
 }
 
-.boxes {
-    padding: 10px;
-}
+/* zoom animation */
+.zoom {
+    padding: 100px;
+    transition: transform .2s; 
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  /* 150% zoom on hover */
+  .zoom:hover {
+    transform: scale(1.5); 
+  }
 
+  /* placeholder for work titles */
+  .text-block {
+      position: absolute;
+      top: 110px;
+      right: 10px;
+      background-color: black;
+      color: white;
+      padding-left: 20px;
+      padding-right: 20px;
+  }
+
+  /* Begin other info about me section */
 .content {
     width: 100%;
     display: flex;
@@ -106,6 +140,7 @@ h3 {
     margin-bottom: 10px;
 }
 
+/* work on size of images */
 #aboutMeImage {
     max-height: 250px;
     float: right;
