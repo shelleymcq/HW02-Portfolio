@@ -36,7 +36,7 @@ li a {
    
 }
 
-.periodic-table {
+#periodic-table {
     height: 400px;
     width: 100%;
     background-image: url("../images/periodic-table.jpg");
@@ -45,7 +45,7 @@ li a {
     padding: 0;
 }
 
-.portfolio-header {
+#portfolio {
     height: 60px;
     width: 100%;
     background-color: #233d4d;
@@ -62,7 +62,7 @@ h2 {
 /* portfolio placeholder boxes */
 /* Yes, I WILL have six projects to show off :) */
 
-#portfolio {
+#portfolio-boxes {
     width: 60%;
     display: flex;
     flex-direction: row;
