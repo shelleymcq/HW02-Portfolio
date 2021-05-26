@@ -2,38 +2,51 @@
 body {
     background-color: #f7f8f0;
     font-family: 'Geneva', sans-serif;
-    display: flex;
-    flex-direction: column;
-}
 
+}
 
 header {
     background-color: #233d4d;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 1%;
 }
 
 h1 {
+    display: inline-block;
     color: #fcca46;
     font-size: 48px;
+
+}
+.nav-bar {
+    float: right;
+    margin: 0;
 }
 
 ul {
-    display: flex;
-    justify-content: space-between;
-    min-width: 400px;
     list-style-type: none;
 }
 
-li a {
+li {
     display: inline-block;
     margin-left: 20px;
+}
+
+/* still not working????? */
+@media screen and (max-width: 600px) {
+    li {
+      float: none;
+      width: 100%;
+    }
+  }
+
+li a {
     color: #f8faec;
     font-size: 24px;
     text-decoration: none;
-   
+    padding: 1em;
+}
+
+li a:hover {
+    background-color: #578bac;
 }
 
 /* background image fills page right to left */
@@ -55,26 +68,37 @@ li a {
     width: auto;
 }
 
-/* header to emphasize work portfolio section */
-#portfolio {
-    height: 60px;
-    width: 100%;
-    background-color: #233d4d;
+
+#portfolio-container {
+
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-h2 {
-    font-size: 40px;
-    font-weight: bold;
-    color: #f8faec;
-    text-align: center;
+.box {
     padding: 10px;
 }
 
+.box:hover {
+    opacity: 0.5;
+
+}
+#box1image {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+
+}
+
+
+
 /* portfolio placeholder boxes */
-/* Yes, I WILL have six projects to show off :) */
 
 #portfolio-boxes {
-    width: 80%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -84,38 +108,6 @@ h2 {
     padding: 10px;
 }
 
-/* zoom animation */
-.zoom {
-    padding: 100px;
-    transition: transform .2s; 
-    width: 200px;
-    height: 200px;
-    margin: 0 auto;
-    position: relative;
-  }
-  
-  /* 150% zoom on hover */
-  .zoom:hover {
-    transform: scale(1.5); 
-  }
-
-  /* placeholder for work titles */
-  .text-block {
-      position: absolute;
-      top: 110px;
-      right: 10px;
-      background-color: black;
-      color: white;
-      padding-left: 20px;
-      padding-right: 20px;
-  }
-
-/* adapt to smaller screens */
-@media screen and (max-width: 768px) {
-    .zoom {
-        width: 50%;
-    }
-}
 
   /* Begin other info about me section */
 .content {
@@ -173,3 +165,4 @@ footer {
     text-align: center;
     color: #f8faec;
 }
+
