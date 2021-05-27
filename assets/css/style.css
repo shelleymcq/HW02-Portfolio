@@ -7,17 +7,12 @@ body {
 
 header {
     background-color: #233d4d;
-    padding: 1%;
+    padding: 3%;
 }
 
-h1 {
-    display: inline-block;
-    color: #fcca46;
-    font-size: 48px;
 
-}
 .nav-bar {
-    float: right;
+    position: relative;
     margin: 0;
 }
 
@@ -27,11 +22,14 @@ ul {
 
 li {
     display: inline-block;
-    margin-left: 20px;
+    float: right;
 }
 
 /* still not working????? */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
+    .nav-bar {
+        width: 100%;
+    }
     li {
       float: none;
       width: 100%;
@@ -42,7 +40,7 @@ li a {
     color: #f8faec;
     font-size: 24px;
     text-decoration: none;
-    padding: 1em;
+    padding: 5px;
 }
 
 li a:hover {
@@ -59,11 +57,20 @@ li a:hover {
     padding: 0;
 }
 
+h1 {
+    display: inline-block;
+    color: #fcca46;
+    font-size: 48px;
+    font-weight: bold;
+    text-shadow: 0 0 10px #031927, 0 0 10px #031927, 0 0 10px #031927, 0 0 10px #031927;
+    padding-left: 20px;
+}
+
 /* tiny Shelley at top of page */
 #avatar {
-    position: absolute;
-    top: 20px;
-    left: 20px;
+    display: block;
+
+    padding-left: 20px;
     height: 150px;
     width: auto;
 }
