@@ -25,7 +25,6 @@ li {
     float: right;
 }
 
-/* still not working????? */
 @media screen and (max-width: 800px) {
     .nav-bar {
         width: 100%;
