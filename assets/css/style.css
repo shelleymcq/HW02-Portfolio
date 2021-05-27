@@ -111,10 +111,9 @@ h1 {
 
 .info {
     display: flex;
-    width: 33%;
+    width: 35%;
     background-color: #fcca46;
     color: #323031;
-
 }
 
 .text {
