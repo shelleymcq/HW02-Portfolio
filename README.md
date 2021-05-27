@@ -2,7 +2,7 @@
 
 A professional portfolio created with HTML and CSS. It includes links to a completed project and placeholders for future projects.
 
-![screenshot of app](deployed-portfolio.png)
+![screenshot of app](./assets/images/deployed-portfolio.png)
 
 Deployed application:
-https://github.com/shelleymcq/HW02-Portfolio
+https://shelleymcq.github.io/HW02-Portfolio/
